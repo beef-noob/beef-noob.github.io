@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #232946;
+    padding: 1rem 2rem;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #eebbc3;
+}
+
+.hero {
+    background: linear-gradient(120deg, #eebbc3 0%, #232946 100%);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+#learnMoreBtn {
+    background: #232946;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#learnMoreBtn:hover {
+    background: #eebbc3;
+    color: #232946;
+}
+
+.features {
+    padding: 4rem 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.feature-card {
+    background: #f4f6fb;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+    padding: 2rem;
+    width: 250px;
+    transition: transform 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(35,41,70,0.12);
+}
+
+.about {
+    padding: 4rem 2rem;
+    background: #eebbc3;
+    color: #232946;
+    text-align: center;
+}
+
+footer {
+    background: #232946;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-card {
+        width: 90%;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
